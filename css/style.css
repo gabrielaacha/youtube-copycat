@@ -1,0 +1,321 @@
+/*applies to the whole page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/*font link*/
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+/*type-font for all contents of the body except if stated otherwise*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: blueviolet;
+}
+
+/*-------------------------------------------------------------*/
+
+/**/
+.banner-top {
+  height: 5vh;
+  background-color: rgb(76, 76, 77);
+  display: flex;
+  justify-content: space-between; /*putting content spread in the line horizontally*/
+  align-items: center; /*putting content in the middle vertically*/
+  /* background-image: url(../img/logo/logo-4.png),
+    url(../img/icons/caret-square-right-solid.svg),
+    url(../img/icons/battery-half-solid.svg); */
+  /* background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left, right, right;
+  background-size: 50px, 20px; */
+}
+
+/*icons top right*/
+
+.icons-top-right {
+  text-align: right;
+  /* margin: 1rem 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-top-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-top-left {
+  text-align: left;
+  /* margin: 1rem 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icon-battery1,
+#icon-battery2,
+#icon-battery3,
+#icon-battery4,
+#icon-battery-left-1 {
+  width: 1rem;
+  margin: 0rem 0.5rem;
+  color: white;
+  /* color: white;
+  background-color: white; */
+}
+
+.icon-battery-left-2 {
+  width: 2.6rem;
+  margin-left: 0.5rem;
+}
+
+.search-barre-1 {
+  /* margin-right: 0.5rem; */
+  height: 1.1rem;
+  width: 20rem;
+  background-color: black;
+  border: transparent;
+  color: white;
+}
+
+.search-barre-1-button {
+  /*icon*/
+  width: 0.7rem;
+}
+
+.button-top {
+  background-color: grey;
+  width: 2rem;
+  height: 1.1rem;
+  border: transparent;
+}
+
+/*-----------------------all--boxes------------------------------*/
+
+/*all boxes including left box and central box and all what is inside*/
+.all-boxes {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+/*----------------------left--box------------------------------*/
+
+.left-box {
+  width: 15vw;
+  height: 100vw;
+  color: white;
+  background-color: rgb(58, 58, 58);
+  text-align: left;
+  justify-content: left;
+}
+
+/*nav inside left box*/
+.left-box ul li {
+  font-size: 0.5rem;
+  list-style: none;
+}
+
+/*nav1 inside left box*/
+.nav-left1 {
+  padding: 20px 10px;
+}
+
+/*nav2 inside left box*/
+.nav-left2 {
+  padding: 20px 10px;
+}
+
+/*----------------------central--box-----------------------------*/
+
+/**/
+.central-box {
+  width: 90vw;
+  height: 100%;
+  /* text-align: right; */
+  background-color: rgb(17, 17, 17);
+}
+
+/*----------------------central--box--nav---------------------------*/
+
+/*top nav inside the central box*/
+.box-menu-top {
+  /* text-align: justify; */
+  display: flex;
+  /* align-items: center; */
+  background-color: rgb(66, 66, 66);
+  height: 1.5rem;
+}
+
+/*elements of the top nav inside the central box*/
+.box-menu-top li {
+  display: inline-flex;
+  /* background-color: pink; */
+  align-items: center;
+  color: white;
+  margin: 0px 1rem 1px 2rem;
+  font-size: 0.45rem;
+  font-weight: bold;
+  /* text-align: left; */
+}
+
+/* .search-barre-2 {
+  margin-right: 0.5rem;
+  height: 0.8rem;
+  width: 6rem;
+}
+
+.button-2 {
+  background-color: transparent;
+  border: transparent;
+}
+
+.search-barre-2-button {
+  width: 0.7rem;
+} */
+
+/*-----------------central-box-window-right-----------------------------*/
+
+/*aligning the widows and right box in one line*/
+.central-box-window-right {
+  display: flex;
+}
+/*--------------------windows------------------------------*/
+
+/*parent element of all the windows in two rows, text, etc*/
+.all-windows {
+  align-items: center;
+  /* display: flex; */
+  /* flex-flow: column; */
+  margin-left: 8vw;
+}
+
+/*positioning of each window row*/
+.windows-second-row,
+.windows-first-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+/*-----------------window-text-----------------------------------------*/
+
+/*paragraph assigned to each window*/
+.windows-first-row p,
+.windows-second-row p {
+  font-size: 7px;
+  text-align: left;
+  flex-wrap: wrap;
+  margin: 0.3rem 0rem;
+  color: white;
+  font-weight: bold;
+}
+
+/*small banner on the top of the window rows*/
+.windows-first-row-text,
+.windows-second-row-text {
+  height: 2rem;
+  width: 59vw;
+  margin: 0;
+  /* justify-items: center; */
+  background-color: black;
+  font-weight: bolder;
+  display: flex;
+  align-items: center; /*putting content in the middle vertically */
+}
+
+.play-icon {
+  width: 0.45rem;
+  background-color: white;
+}
+
+/*text inside the banners*/
+
+.text-line1 {
+  max-width: 110px;
+}
+
+.text-line2 {
+  display: flex;
+  align-items: center;
+  color: red;
+}
+
+/*---------------window first row----------------------------*/
+
+.window1,
+.window2,
+.window3,
+.window4 {
+  margin: 0px 2px 10px 2px;
+  background-color: transparent;
+}
+
+.window1 img,
+.window2 img,
+.window3 img,
+.window4 img {
+  width: 120px;
+  height: 80px;
+}
+
+/*---------------window second row----------------------------*/
+
+.window5,
+.window6,
+.window7,
+.window8 {
+  margin: 0px 2px 10px 2px;
+  background-color: transparent;
+}
+
+.window5 img,
+.window6 img,
+.window7 img,
+.window8 img {
+  width: 120px;
+  height: 80px;
+}
+
+/*----------------right-box---------------------------------------------*/
+
+.right-box-inside-central {
+  width: 40vw;
+  height: 100vh;
+  background-color: blue;
+  color: white;
+}
+
+.right-box-inside-central p {
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+/*----------------icons---------------------------------------------*/
+
+.windows-first-row-text i {
+  color: white;
+  font-size: 0.5rem;
+}
+
+.icon-battery1 {
+  color: white;
+}
+
+.play-icon {
+  color: white;
+}
+
+.menu-top i {
+  font-size: 0.7rem;
+}
+
+.icons-top-right i {
+  color: white;
+  font-size: 0.8rem;
+}
