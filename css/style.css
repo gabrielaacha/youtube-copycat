@@ -122,13 +122,10 @@ body {
   list-style: none;
 }
 
-/*nav1 inside left box*/
-.nav-left1 {
-  padding: 20px 10px;
-}
-
-/*nav2 inside left box*/
-.nav-left2 {
+/*nav inside left box*/
+.nav-left1,
+.nav-left2,
+.nav-left3 {
   padding: 20px 10px;
 }
 
@@ -287,13 +284,28 @@ body {
 .right-box-inside-central {
   width: 40vw;
   height: 100vh;
-  background-color: blue;
+  background-color: black;
   color: white;
 }
 
-.right-box-inside-central p {
+/* .right-box-inside-central p {
   font-size: 0.5rem;
   font-weight: bold;
+} */
+
+/*nav inside left box*/
+.right-box-inside-central ul li {
+  font-size: 0.45rem;
+  list-style: none;
+}
+
+/*nav inside left box*/
+.nav-right {
+  padding: 10px 20px;
+}
+
+.nav-right:first-child {
+  font-weight: bolder;
 }
 
 /*----------------icons---------------------------------------------*/
